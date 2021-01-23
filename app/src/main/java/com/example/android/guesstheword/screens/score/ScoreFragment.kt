@@ -55,6 +55,7 @@ class ScoreFragment : Fragment() {
     }
 
     private fun onPlayAgain() {
+        // TODO: After rotate, application restarts. Check if this resolves right?
         findNavController().navigate(ScoreFragmentDirections.actionRestart())
     }
 }
