@@ -74,6 +74,10 @@ class GameFragment : Fragment() {
             }
         })
 
+        viewModel.elapse.observe(this.viewLifecycleOwner, Observer {time ->
+            binding.timeRemaining.text = time
+        })
+
         return binding.root
 
     }
